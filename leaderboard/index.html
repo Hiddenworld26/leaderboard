@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Strategies Leaderboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">TradingSite</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Leaderboard</a></li>
+        <li><a href="#">Strategies</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="user-account">
+      <img src="profile-icon.jpeg" alt="Profile">
+      <div class="dropdown">
+        <a href="#">Settings</a>
+        <a href="#">Notifications</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Strategy Graph Section -->
+  <section class="strategy-graph">
+    <h2>Strategy Name: XYZ</h2>
+    <p>Overall Profit: $15,000</p>
+    <img id="graph" src="line-graph.webp" alt="Strategy Graph">
+  </section>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Leaderboard Header -->
+    <section class="leaderboard-header">
+      <h1>Trading Strategies Leaderboard</h1>
+      <p>Discover top-performing trading strategies and analyze their performance metrics.</p>
+    </section>
+  
+    <!-- Filters and Sorting -->
+    <section class="filters-sorting">
+      <div class="filters">
+        <label for="time-frame">Time Frame:</label>
+        <select id="time-frame">
+          <option value="1m">1 Month</option>
+          <option value="3m">3 Months</option>
+          <option value="6m">6 Months</option>
+          <option value="1y">1 Year</option>
+        </select>
+  
+        <label for="strategy-type">Strategy Type:</label>
+        <select id="strategy-type">
+          <option value="all">All</option>
+          <option value="trend">Trend Following</option>
+          <option value="mean-reversion">Mean Reversion</option>
+          <option value="arbitrage">Arbitrage</option>
+        </select>
+  
+        <label for="risk-level">Risk Level:</label>
+        <select id="risk-level">
+          <option value="all">All</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+  
+        <label for="developer">Developer:</label>
+        <input type="text" id="developer" placeholder="Search Developer">
+      </div>
+  
+      <div class="sorting">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+          <option value="calmar-profit">Calmar Profit</option>
+          <option value="overall-profit">Overall Profit</option>
+          <option value="avg-daily-profit">Average Daily Profit</option>
+          <option value="win-percentage">Win Percentage</option>
+        </select>
+      </div>
+    </section>
+  
+    <!-- Leaderboard Table -->
+    <section class="leaderboard-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Strategy Name</th>
+            <th>Developer</th>
+            <th>Calmar Profit</th>
+            <th>Avg Daily Profit</th>
+            <th>Overall Profit</th>
+            <th>Win Percentage</th>
+            <th>Actions</th>
+            <th>Graph</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be populated by JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  
+      <br>
+      <br>
+  <!-- Footer Section -->
+  <footer>
+    <div class="quick-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Help Center</a>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="f.jpeg" alt="Facebook" height="20px" width="20px"></a>
+      <a href="#"><img src="t.png" alt="Twitter" height="20px" width="20px"></a>
+      <a href="#"><img src="l.png" alt="LinkedIn" height="20px" width="20px"></a>
+    </div>
+    <div class="newsletter-signup">
+      <label for="newsletter">Subscribe to our Newsletter:</label>
+      <input type="email" id="newsletter" placeholder="Your Email">
+      <button>Subscribe</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

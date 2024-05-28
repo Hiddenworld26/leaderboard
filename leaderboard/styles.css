@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    border: 5.5px solid #5DEBD7;
+  }
+  
+  header, footer {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    width: 50%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .user-account {
+    position: relative;
+  }
+  
+  .user-account img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  
+  .user-account .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  .user-account:hover .dropdown {
+    display: block;
+  }
+  
+  .user-account .dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .user-account .dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  .strategy-graph {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .strategy-graph img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .leaderboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leaderboard-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .leaderboard-header p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .filters-sorting {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filters-sorting .filters,
+  .filters-sorting .sorting {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filters-sorting label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .filters-sorting select,
+  .filters-sorting input {
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  
+  .filters-sorting select:hover,
+  .filters-sorting input:hover {
+    border-color: #007bff;
+  }
+  
+  .leaderboard-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .leaderboard-table th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .leaderboard-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .leaderboard-table tbody tr:hover {
+    background-color: #ffcccc;
+    border: 2px solid #007bff;
+  }
+  
+  .leaderboard-table a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .leaderboard-table img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .quick-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  footer .quick-links a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .social-media a {
+    margin-right: 10px;
+  }
+  
+  footer .newsletter-signup {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .newsletter-signup input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  footer .newsletter-signup button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  footer .newsletter-signup button:hover {
+    background-color: #0056b3;
+  }
+  
